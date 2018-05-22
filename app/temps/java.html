@@ -1,0 +1,11 @@
+<h1 ng-style="{'background-color':'blue'}">This is Java Content</h1>
+
+<div ng-style="{'background-color':{{'bgcolor'}}}" ng-show="myflag" ng-hide="myflag"> Java Course Details</div>
+
+<a ng-href="{{googleurl}}" target="_blank">Google</a>
+
+<input type="button" ng-click="hidefun();" value="Hide Div"/>
+<input type="button" ng-click="hidefun();" value="Show Div"/>
+
+Show Selected :<select ng-model="makeSelected" 
+    ng-options="stat.Id as stat.Name for stat in mystatus"></select>
